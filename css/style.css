@@ -1,0 +1,35 @@
+/*Estilos personalizados -->*/
+.hero-section {
+    background-color: #3498db;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-section h1{
+    font-size: 70px;
+}
+/*OTHER SECTION*/
+.services-section {
+    padding: 60px 0;
+}
+.service-item {
+    margin-bottom: 30px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Puedes agregar estilos personalizados aquí */
+.timeline-event {
+    transition: transform 0.2s ease;
+}
+
+.timeline-event:hover {
+    transform: scale(1.05);
+}
+
+
