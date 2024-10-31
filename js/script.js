@@ -1,28 +1,30 @@
 
 let currentIndex = 0;
 
-  function showSlide(index) {
-    const carousel = document.getElementById("carousel");
-    const slides = document.querySelectorAll("#carousel > div");
-    const totalSlides = slides.length;
+function showSlide(index) {
+  const carousel = document.getElementById('carousel');
+  const slides = carousel.children.length;
+  currentIndex = (index + slides) % slides;
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  updateIndicators();
+}
 
-    // Si el índice es menor a 0 o mayor que el total de diapositivas, se ajusta
-    if (index < 0) {
-      currentIndex = totalSlides - 1;
-    } else if (index >= totalSlides) {
-      currentIndex = 0;
-    } else {
-      currentIndex = index;
-    }
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
 
-    // Mueve el contenedor de las diapositivas al índice actual
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
 
-  function prevSlide() {
-    showSlide(currentIndex - 1);
-  }
+function updateIndicators() {
+  const indicators = document.querySelectorAll('.indicator');
+  indicators.forEach((dot, index) => {
+    dot.classList.toggle('bg-gray-800', index === currentIndex);
+    dot.classList.toggle('bg-gray-400', index !== currentIndex);
+    dot.classList.toggle('scale-125', index === currentIndex); // Aumenta el tamaño del punto activo
+  });
+}
 
-  function nextSlide() {
-    showSlide(currentIndex + 1);
-  }
+// Inicializa el indicador en el primer slide
+updateIndicators();

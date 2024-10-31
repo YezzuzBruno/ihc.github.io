@@ -18,6 +18,7 @@
           <li><a href="#info">Información</a></li>
           <li><a href="#proceso">Proceso</a></li>
           <li><a href="#desarrollo">Desarrollo</a></li>
+          <li><a href="#galeria">Galeria</a></li>
           <li><a href="#team">Equipo</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -63,6 +64,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Sección del PROYECTOS -->
     <section id="proceso" class="bg-gray-200 py-12">
@@ -227,6 +229,49 @@
         </div>
       </div>
     </section>
+
+
+<!-- Sección Galería -->
+<div id="galeria" class="bg-white p-8">
+  <h2 class="text-4xl font-bold text-center mb-6">Galería</h2>
+  
+  <!-- Galería con Carrusel -->
+  <div class="relative w-full md:w-4/5 mx-auto overflow-hidden">
+    <div id="carousel" class="flex transition-transform duration-500">
+      <!-- Imagen 1 -->
+      <div class="w-full flex-shrink-0">
+        <img src="img/1.jpeg" alt="Slide 1" class="w-full h-96 object-cover" />
+      </div>
+      <!-- Imagen 2 -->
+      <div class="w-full flex-shrink-0">
+        <img src="img/2.jpeg" alt="Slide 2" class="w-full h-96 object-cover" />
+      </div>
+      <!-- Imagen 3 -->
+      <div class="w-full flex-shrink-0">
+        <img src="img/3.jpeg" alt="Slide 3" class="w-full h-96 object-cover" />
+      </div>
+    </div>
+
+    <!-- Flechas de navegación -->
+    <button onclick="prevSlide()" class="arrow-button left-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button onclick="nextSlide()" class="arrow-button right-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <!-- Indicadores tipo "bolitas" -->
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <span onclick="showSlide(0)" class="indicator w-3 h-3 md:w-4 md:h-4 rounded-full bg-gray-400 cursor-pointer transition-all duration-300"></span>
+      <span onclick="showSlide(1)" class="indicator w-3 h-3 md:w-4 md:h-4 rounded-full bg-gray-400 cursor-pointer transition-all duration-300"></span>
+      <span onclick="showSlide(2)" class="indicator w-3 h-3 md:w-4 md:h-4 rounded-full bg-gray-400 cursor-pointer transition-all duration-300"></span>
+    </div>
+  </div>
+</div>
 
     <!-- Sección del Equipo -->
     <section id="team" class="bg-gray-200 py-12">
