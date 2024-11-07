@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interacción Humano Computador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="text-black p-6 min-h-[70px]">
+      <!-- Aumentar el padding y establecer una altura mínima -->
+      <div class="container mx-auto flex justify-between items-center h-full">
+        <a href="#" class="text-2xl font-bold">IHC</a>
+        <ul class="flex space-x-4">
+        <li><a href="index.html">Inicio</a></li>
+          <li><a href="#info">Información</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#desarrollo">Desarrollo</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#team">Equipo</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección de Información -->
+    <section
+      class="relative w-full h-screen py-10 px-6 bg-cover bg-center flex flex-col justify-center items-center"
+      style="background-image: url('img/ihc.jpeg')"
+    >
+      <!-- Superposición de color -->
+      <div class="absolute inset-0 bg-black opacity-80"></div>
+      <!-- Superposición con color negro y opacidad del 50% -->
+
+      <div class="text-center mb-8 text-white relative z-10">
+        <div class="text-center">
+          <h2 class="text-6xl font-bold">Interacción Humano Computador</h2>
+        </div>
+
+        <p class="mt-10 text-4xl">PROYECTO</p>
+      </div>
+    </section>
+
+    <!-- Sección de Información -->
+    <section id="info" class="w-full py-12 px-6 bg-cover bg-center">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold">Información</h2>
+      </div>
+      <!-- Fondo oscuro para el texto -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-7 rounded shadow-md bg-opacity-90">
+          <h3 class="text-2xl font-semibold mb-2">Descripción</h3>
+          <p class="text-gray-600">
+            Descripción breve sobre esta sección o servicio ofrecido.
+          </p>
+        </div>
+        <div class="bg-white p-7 rounded shadow-md bg-opacity-90">
+          <h3 class="text-2xl font-semibold mb-2">Objetivo</h3>
+          <p class="text-gray-600">
+            Descripción breve sobre esta sección o servicio ofrecido.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección del PROYECTOS -->
+    <section id="proceso" class="bg-gray-200 py-12">
+      <div class="bg-white py-24 sm:py-32 px-6 md:px-12 lg:px-24">
+        <h2 class="text-3xl font-bold text-center mb-8">Proceso de Diseño</h2>
+        <p class="text-center text-gray-600 mb-12">
+          A continuación, describimos las etapas que seguimos en el proceso de
+          diseño del videojuego.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
+            <img
+              src="img/idea.png"
+              alt="Descripción de la imagen"
+              class="w-16 h-16 mr-4 rounded"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Creación de la idea</h3>
+              <p class="text-gray-600 mb-4">
+                La idea de esta aplicación surge para brindar a los usuarios un
+                asistente nutricional accesible que permita analizar calorías,
+                registrar alimentos y generar planes personalizados. Utilizando
+                tecnologías como el escaneo de códigos de barras y la
+                inteligencia artificial, la aplicación busca facilitar el
+                control de la nutrición diaria, promoviendo hábitos alimenticios
+                saludables sin depender completamente de un nutricionista.
+              </p>
+              <a
+                href="ruta/al/archivo6.pdf"
+                class="text-blue-500 hover:text-blue-700"
+                >Descargar</a
+              >
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
+            <img
+              src="img/scketching.png"
+              alt="Descripción de la imagen"
+              class="w-16 h-16 mr-4 rounded"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Scketching</h3>
+              <p class="text-gray-600 mb-4">
+                Se elaboraron esquemas para representar las actividades del
+                juego en el cuarto, que incluyen la recopilación de recursos y
+                la edificación de puzzles.
+              </p>
+              <a
+                href="ruta/al/archivo6.pdf"
+                class="text-blue-500 hover:text-blue-700"
+                >Descargar</a
+              >
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
+            <img
+              src="img/prototipo.png"
+              alt="Descripción de la imagen"
+              class="w-16 h-16 mr-4 rounded"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Prototipado</h3>
+              <p class="text-gray-600 mb-4">
+                Se desarrolló un prototipo jugable donde el usuario puede
+                interactuar con las mecanicas del juego.
+              </p>
+              <a
+                href="ruta/al/archivo6.pdf"
+                class="text-blue-500 hover:text-blue-700"
+                >Descargar</a
+              >
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
+            <img
+              src="img/evaluacion.png"
+              alt="Descripción de la imagen"
+              class="w-16 h-16 mr-4 rounded"
+            />
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Evaluación</h3>
+              <p class="text-gray-600 mb-4">
+                El primer prototipo en Realidad Virtual posibilitó que los
+                jugadores colaboraran de forma inmersiva para solucionar retos.
+                Se implementaron actividades que necesitaban colaboración en
+                equipo para progresar.
+              </p>
+              <a
+                href="ruta/al/archivo6.pdf"
+                class="text-blue-500 hover:text-blue-700"
+                >Descargar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="desarrollo" class="timeline">
+      <h2 class="text-4xl font-bold text-center mb-8">Línea de Tiempo</h2>
+      <!-- Evento 1: Tipo 1 -->
+      <div
+        class="timeline__event animated fadeInUp delay-3s timeline__event--type1"
+      >
+        <div class="timeline__event__icon">
+          <!--<i class="lni-cake"></i>-->
+          <div class="timeline__event__date">20-08-2019</div>
+        </div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Creación de la idea</div>
+          <div class="timeline__event__description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam
+              corporis incidunt reprehenderit accusantium id aut architecto
+              harum quidem dolorem in!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evento 2: Tipo 2 -->
+      <div
+        class="timeline__event animated fadeInUp delay-2s timeline__event--type2"
+      >
+        <div class="timeline__event__icon">
+          <!--<i class="lni-cake"></i>-->
+          <div class="timeline__event__date">20-08-2019</div>
+        </div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Scketching</div>
+          <div class="timeline__event__description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam
+              corporis incidunt reprehenderit accusantium id aut architecto
+              harum quidem dolorem in!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evento 3: Tipo 3 -->
+      <div
+        class="timeline__event animated fadeInUp delay-1s timeline__event--type3"
+      >
+        <div class="timeline__event__icon">
+          <!--<i class="lni-cake"></i>-->
+          <div class="timeline__event__date">20-08-2019</div>
+        </div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Prototipado</div>
+          <div class="timeline__event__description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam
+              corporis incidunt reprehenderit accusantium id aut architecto
+              harum quidem dolorem in!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Evento 3: Tipo 3 -->
+      <div
+        class="timeline__event animated fadeInUp delay-1s timeline__event--type4"
+      >
+        <div class="timeline__event__icon">
+          <!--<i class="lni-cake"></i>-->
+          <div class="timeline__event__date">20-08-2019</div>
+        </div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">Evaluacion</div>
+          <div class="timeline__event__description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam
+              corporis incidunt reprehenderit accusantium id aut architecto
+              harum quidem dolorem in!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Más eventos según sea necesario -->
+    </div>
+
+
+    <!-- Sección Galería -->
+    <div id="galeria" class="bg-white p-8">
+      <h2 class="text-4xl font-bold text-center mb-6">Galería</h2>
+
+      <!-- Galería con Carrusel -->
+      <div class="relative w-full md:w-4/5 mx-auto overflow-hidden">
+        <div id="carousel" class="flex transition-transform duration-500">
+          <!-- Imagen 1 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="img/1.jpeg"
+              alt="Slide 1"
+              class="w-full h-96 object-cover"
+            />
+          </div>
+          <!-- Imagen 2 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="img/2.jpeg"
+              alt="Slide 2"
+              class="w-full h-96 object-cover"
+            />
+          </div>
+          <!-- Imagen 3 -->
+          <div class="w-full flex-shrink-0">
+            <img
+              src="img/3.jpeg"
+              alt="Slide 3"
+              class="w-full h-96 object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Flechas de navegación -->
+        <button onclick="prevSlide()" class="arrow-button left-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-800"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button onclick="nextSlide()" class="arrow-button right-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-800"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+
+        <!-- Indicadores tipo "bolitas" -->
+        <div
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
+        >
+          <span
+            onclick="showSlide(0)"
+            class="indicator w-3 h-3 md:w-4 md:h-4 rounded-full bg-gray-400 cursor-pointer transition-all duration-300"
+          ></span>
+          <span
+            onclick="showSlide(1)"
+            class="indicator w-3 h-3 md:w-4 md:h-4 rounded-full bg-gray-400 cursor-pointer transition-all duration-300"
+          ></span>
+          <span
+            onclick="showSlide(2)"
+            class="indicator w-3 h-3 md:w-4 md:h-4 rounded-full bg-gray-400 cursor-pointer transition-all duration-300"
+          ></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección del Equipo -->
+    <section id="team" class="bg-gray-200 py-12">
+      <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+          <div class="max-w-xl">
+            <h2
+              class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"
+            >
+              Nuestro Equipo
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              We’re a dynamic group of individuals who are passionate about what
+              we do and dedicated to delivering the best results for our
+              clients.
+            </p>
+          </div>
+          <ul
+            role="list"
+            class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+          >
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="img/user.png" alt="" />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                  >
+                    Jesus Chancayauri
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">
+                    Co-Founder / CEO
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="img/user.png" alt="" />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                  >
+                    Berly Diaz
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">
+                    Co-Founder / CEO
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="img/user.png" alt="" />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                  >
+                    Jhonatan Usca
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">
+                    Co-Founder / CEO
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="img/user.png" alt="" />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                  >
+                    Leonardo Montoya
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">
+                    Co-Founder / CEO
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="img/user.png" alt="" />
+                <div>
+                  <h3
+                    class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+                  >
+                    Jayan Caceres
+                  </h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">
+                    Co-Founder / CEO
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- More people... -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contact" class="bg-blue-600 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>© 2024 Mi Sitio. Todos los derechos reservados.</p>
+        <ul class="flex justify-center space-x-4 mt-4">
+          <li><a href="#" class="hover:text-gray-200">Términos</a></li>
+          <li><a href="#" class="hover:text-gray-200">Privacidad</a></li>
+          <li><a href="#" class="hover:text-gray-200">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
