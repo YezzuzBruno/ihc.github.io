@@ -8,24 +8,31 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+
   </head>
   <body class="bg-gray-100 text-gray-800">
     <!-- Navbar -->
     <nav class="text-black p-6 min-h-[70px]">
       <!-- Aumentar el padding y establecer una altura mínima -->
       <div class="container mx-auto flex justify-between items-center h-full">
-        <a href="#" class="text-2xl font-bold">IHC</a>
+        <!-- Reemplaza el texto con una imagen -->
+        <a href="#" class="text-2xl font-bold">
+          <img src="img/logo.png" alt="Logo IHC" class="h-16 w-auto">
+        </a>
         <ul class="flex space-x-4">
-        <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="#info">Información</a></li>
           <li><a href="#proceso">Proceso</a></li>
           <li><a href="#desarrollo">Desarrollo</a></li>
-          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#galeria">Galería</a></li>
           <li><a href="#team">Equipo</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
     </nav>
+    
+    
 
     <!-- Sección de Información -->
     <section
@@ -46,127 +53,92 @@
     </section>
 
     <!-- Sección de Información -->
-    <section id="info" class="w-full py-12 px-6 bg-cover bg-center">
-      <div class="text-center mb-10">
-        <h2 class="text-4xl font-bold">Información</h2>
-      </div>
-      <!-- Fondo oscuro para el texto -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-7 rounded shadow-md bg-opacity-90">
-          <h3 class="text-2xl font-semibold mb-2">Descripción</h3>
-          <p class="text-gray-600">
-            Esta aplicación tiene como propósito ayudar a los usuarios a mantener un seguimiento detallado y personalizado de su control alimenticio. Con un enfoque en mejorar la salud nutricional, permite registrar y monitorear la ingesta de alimentos a través de una función innovadora que escanea los alimentos, detectando su peso y tamaño. Basándose en una tabla de composición de alimentos, la aplicación calcula los nutrientes consumidos y brinda un diagnóstico adaptado a cada usuario, según su perfil (personas con sobrepeso, bajo peso, en peso normal, o quienes frecuentan el gimnasio).
-          </p>
-        </div>
-        <div class="bg-white p-7 rounded shadow-md bg-opacity-90">
-          <h3 class="text-2xl font-semibold mb-2">Objetivo</h3>
-          <p class="text-gray-600">
-            Facilitar el seguimiento nutricional mediante la automatización del escaneo de alimentos y cálculo de nutrientes.
-            Personalizar diagnósticos basados en la composición nutricional y los perfiles individuales de los usuarios.
-            Promover la educación nutricional ayudando a los usuarios a entender el impacto de cada alimento en su salud y objetivos alimenticios.
-            Mejorar la adherencia a un plan alimenticio ofreciendo un control más sencillo y rápido de la ingesta diaria.
-            Esta funcionalidad permite que el usuario tome decisiones informadas para alcanzar sus objetivos de salud y bienestar.
-          </p>
-        </div>
-      </div>
-    </section>
+<!-- Sección de Información -->
+<section id="info" class="w-full py-12 px-6 bg-gray-100">
+  <div class="text-center mb-10">
+    <h2 class="text-4xl font-bold text-gray-800">Información</h2>
+  </div>
+  <!-- Tarjetas de información con efecto de hover -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Tarjeta de Problema -->
+    <div class="bg-white p-7 rounded shadow-md bg-opacity-90 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">Problema</h3>
+      <p class="text-gray-600">
+        Muchas personas tienen dificultades para seguir su dieta porque les resulta complicado medir la cantidad exacta de nutrientes en los alimentos que consumen. Esto puede llevar a errores en el conteo de calorías y nutrientes, haciendo que no cumplan con sus objetivos dietéticos.
+      </p>
+    </div>
+    <!-- Tarjeta de Objetivo -->
+    <div class="bg-white p-7 rounded shadow-md bg-opacity-90 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">Objetivo</h3>
+      <p class="text-gray-600">
+        Desarrollar una aplicación que permita a los usuarios escanear alimentos y obtener información nutricional precisa en tiempo real. Esto ayudará a los usuarios a llevar un registro preciso de su ingesta diaria de calorías y nutrientes, facilitando el cumplimiento de sus metas dietéticas.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Sección del PROYECTOS -->
-    <section id="proceso" class="bg-gray-200 py-12">
-      <div class="bg-white py-24 sm:py-32 px-6 md:px-12 lg:px-24">
-        <h2 class="text-3xl font-bold text-center mb-8">Proceso de Diseño</h2>
-        <p class="text-center text-gray-600 mb-12">
-          A continuación, describimos las etapas que seguimos en el proceso de
-          diseño del videojuego.
-        </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
-          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
-            <img
-              src="img/idea.png"
-              alt="Descripción de la imagen"
-              class="w-16 h-16 mr-4 rounded"
-            />
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Creación de la idea</h3>
-              <p class="text-gray-600 mb-4">
-                La idea de esta aplicación surge para brindar a los usuarios un
-                asistente nutricional accesible que permita analizar calorías,
-                registrar alimentos y generar planes personalizados. Utilizando
-                tecnologías como el escaneo de códigos de barras y la
-                inteligencia artificial, la aplicación busca facilitar el
-                control de la nutrición diaria, promoviendo hábitos alimenticios
-                saludables sin depender completamente de un nutricionista.
-              </p>
-              <a
-                href="ruta/al/archivo6.pdf"
-                class="text-blue-500 hover:text-blue-700"
-                >Descargar</a
-              >
-            </div>
-          </div>
-          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
-            <img
-              src="img/scketching.png"
-              alt="Descripción de la imagen"
-              class="w-16 h-16 mr-4 rounded"
-            />
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Scketching</h3>
-              <p class="text-gray-600 mb-4">
-                Se elaboraron esquemas para representar las actividades del
-                juego en el cuarto, que incluyen la recopilación de recursos y
-                la edificación de puzzles.
-              </p>
-              <a
-                href="ruta/al/archivo6.pdf"
-                class="text-blue-500 hover:text-blue-700"
-                >Descargar</a
-              >
-            </div>
-          </div>
-          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
-            <img
-              src="img/prototipo.png"
-              alt="Descripción de la imagen"
-              class="w-16 h-16 mr-4 rounded"
-            />
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Prototipado</h3>
-              <p class="text-gray-600 mb-4">
-                Se desarrolló un prototipo jugable donde el usuario puede
-                interactuar con las mecanicas del juego.
-              </p>
-              <a
-                href="ruta/al/archivo6.pdf"
-                class="text-blue-500 hover:text-blue-700"
-                >Descargar</a
-              >
-            </div>
-          </div>
-          <div class="bg-gray-100 rounded-lg p-6 shadow-md flex">
-            <img
-              src="img/evaluacion.png"
-              alt="Descripción de la imagen"
-              class="w-16 h-16 mr-4 rounded"
-            />
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Evaluación</h3>
-              <p class="text-gray-600 mb-4">
-                El primer prototipo en Realidad Virtual posibilitó que los
-                jugadores colaboraran de forma inmersiva para solucionar retos.
-                Se implementaron actividades que necesitaban colaboración en
-                equipo para progresar.
-              </p>
-              <a
-                href="ruta/al/archivo6.pdf"
-                class="text-blue-500 hover:text-blue-700"
-                >Descargar</a
-              >
-            </div>
-          </div>
+    <!-- Sección de Proceso de Diseño -->
+<section id="proceso" class="bg-gray-200 py-12">
+  <div class="bg-white py-24 sm:py-32 px-6 md:px-12 lg:px-24">
+    <h2 class="text-3xl font-bold text-center mb-8">Proceso de Diseño</h2>
+    <p class="text-center text-gray-600 mb-12">
+      A continuación, describimos las etapas que seguimos en el proceso de diseño del proyecto.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+      <!-- Tarjeta de Creación de la Idea -->
+      <div class="bg-gray-100 rounded-lg p-6 shadow-md flex transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/idea.png" alt="Descripción de la imagen" class="w-16 h-16 mr-4 rounded" />
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Creación de la idea</h3>
+          <p class="text-gray-600 mb-4">
+            La idea de esta aplicación surge para brindar a los usuarios un asistente nutricional accesible que permita analizar calorías, registrar alimentos y generar planes personalizados. Utilizando tecnologías como el escaneo de códigos de barras y la inteligencia artificial, la aplicación busca facilitar el control de la nutrición diaria, promoviendo hábitos alimenticios saludables sin depender completamente de un nutricionista.
+          </p>
+          <a href="https://docs.google.com/presentation/d/1yLKX07E9p37FGa3OVUloWrP_pE9Za1UgTfVUUsMdAYk/edit#slide=id.p4" class="text-blue-500 hover:text-blue-700">Descargar</a>
         </div>
       </div>
-    </section>
+      
+      <!-- Tarjeta de Sketching -->
+      <div class="bg-gray-100 rounded-lg p-6 shadow-md flex transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/scketching.png" alt="Descripción de la imagen" class="w-16 h-16 mr-4 rounded" />
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Sketching</h3>
+          <p class="text-gray-600 mb-4">
+            Se elaboraron esquemas para representar las actividades del juego en el cuarto, que incluyen la recopilación de recursos y la edificación de puzzles.
+          </p>
+          <a href="ruta/al/archivo6.pdf" class="text-blue-500 hover:text-blue-700">Descargar</a>
+        </div>
+      </div>
+      
+      <!-- Tarjeta de Prototipado -->
+      <div class="bg-gray-100 rounded-lg p-6 shadow-md flex transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/prototipo.png" alt="Descripción de la imagen" class="w-16 h-16 mr-4 rounded" />
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Prototipado</h3>
+          <p class="text-gray-600 mb-4">
+            Se desarrolló un prototipo jugable donde el usuario puede interactuar con las mecánicas del juego.
+          </p>
+          <a href="ruta/al/archivo6.pdf" class="text-blue-500 hover:text-blue-700">Descargar</a>
+        </div>
+      </div>
+      
+      <!-- Tarjeta de Evaluación -->
+      <div class="bg-gray-100 rounded-lg p-6 shadow-md flex transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <img src="img/evaluacion.png" alt="Descripción de la imagen" class="w-16 h-16 mr-4 rounded" />
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Evaluación</h3>
+          <p class="text-gray-600 mb-4">
+            El primer prototipo en Realidad Virtual posibilitó que los jugadores colaboraran de forma inmersiva para solucionar retos. Se implementaron actividades que necesitaban colaboración en equipo para progresar.
+          </p>
+          <a href="ruta/al/archivo6.pdf" class="text-blue-500 hover:text-blue-700">Descargar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <div id="desarrollo" class="timeline">
       <h2 class="text-4xl font-bold text-center mb-8">Línea de Tiempo</h2>
