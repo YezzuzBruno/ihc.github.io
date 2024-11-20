@@ -2,42 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
-/*Estilos personalizados -->*/
-.hero-section {
-    background-color: #3498db;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
+.flex.items-center.justify-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.hero-section h1 {
-    font-size: 70px;
-}
-
-/*OTHER SECTION*/
-.services-section {
-    padding: 60px 0;
-}
-
-.service-item {
-    margin-bottom: 30px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-
-/* Puedes agregar estilos personalizados aquí */
-.timeline-event {
-    transition: transform 0.2s ease;
-}
-
-.timeline-event:hover {
-    transform: scale(1.05);
+svg {
+  display: block;
+  margin: auto;
 }
 
 
@@ -71,227 +45,7 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*LINEA DE TIEMPO - NUEVA*/
 
-
-html {
-    font-family: sans-serif;
-}
-
-.lineatemp {
-    position: relative;
-    width: 600px;
-    margin: 0 auto;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-}
-
-.fila {
-    display: flex;
-    justify-content: start;
-    border-bottom: 1px solid lightgray;
-    position: relative;
-}
-
-.fila .disco {
-    width: 36px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.fila .disco:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(505 - 2px);
-    height: 100%;
-    width: 3px;
-    background: #80DEEA;
-    z-index: -1;
-}
-
-.fila:first-child .disco:after {
-    height: 50%;
-    top: 50%;
-}
-
-.fila:last-child .disco:after {
-    height: 50%;
-}
-
-.fila .disco>div {
-    width: 50%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background: lightblue;
-    box-sizing: border-box;
-}
-
-.fila:hover .disco>div {
-    border: 3px solid red;
-    background: white;
-}
-
-.fila div:nth-of-type(2) {
-    width: 20%;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.fila div:nth-of-type(3) {
-    width: 60%;
-    padding: 4px;
-}
-
-
-
-/*linea de tiempo*/
-
-
-body {
-    background: #f6f9fc;
-    font-family: "Open Sans", sans-serif;
-    color: #525f7f;
-  }
-  
-  h2 {
-    margin: 5%;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 100;
-  }
-  
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    margin: 5% auto;
-  }
-  
-  .timeline__event {
-    background: #fff;
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-                0 18px 36px -18px rgba(0, 0, 0, 0.3),
-                0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  }
-  
-  .timeline__event__title {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #9251ac;
-    letter-spacing: 1.5px;
-  }
-  
-  .timeline__event__content {
-    padding: 20px;
-  }
-  
-  .timeline__event__date {
-    color: #f6a4ec;
-    font-size: 1.5rem;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  
-  .timeline__event__icon {
-    border-radius: 8px 0 0 8px;
-    background: #9251ac;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 40%;
-    font-size: 2rem;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .timeline__event__description {
-    flex-basis: 60%;
-  }
-  
-  .timeline__event:after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #9251ac;
-    position: absolute;
-    top: 52%;
-    left: -3.5rem;
-    z-index: -1;
-  }
-  
-  .timeline__event:before {
-    content: "";
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    background: #f6a4ec;
-    border-radius: 100%;
-    left: -6rem;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 2px solid #9251ac;
-  }
-  
-  /* Tipo de Evento 2 */
-  .timeline__event--type2:before {
-    background: #87bbfe;
-    border-color: #555ac0;
-  }
-  
-  .timeline__event--type2:after {
-    background: #555ac0;
-  }
-  
-  .timeline__event--type2 .timeline__event__date {
-    color: #87bbfe;
-  }
-  
-  .timeline__event--type2 .timeline__event__icon {
-    background: #555ac0;
-  }
-  
-  .timeline__event--type2 .timeline__event__title {
-    color: #555ac0;
-  }
-  
-  /* Tipo de Evento 3 */
-  .timeline__event--type3:before {
-    background: #aff1b6;
-    border-color: #24b47e;
-  }
-  
-  .timeline__event--type3:after {
-    background: #24b47e;
-  }
-  
-  .timeline__event--type3 .timeline__event__date {
-    color: #aff1b6;
-  }
-  
-  .timeline__event--type3 .timeline__event__icon {
-    background: #24b47e;
-  }
-  
-  .timeline__event--type3 .timeline__event__title {
-    color: #24b47e;
-  }
-  
-  /* Eliminar la línea en el último elemento */
-  .timeline__event:last-child:after {
-    content: none;
-  }
   
   @media (max-width: 786px) {
     .timeline__event {
@@ -303,8 +57,222 @@ body {
   }
 
 
-  
-  
+  /*BOTON DEL DOCUMENTO*/
+  /* From Uiverse.io by Nawsome */ 
+.continue-application {
+  --color: #fff;
+  --background: #404660;
+  --background-hover: #3A4059;
+  --background-left: #2B3044;
+  --folder: #F3E9CB;
+  --folder-inner: #BEB393;
+  --paper: #FFFFFF;
+  --paper-lines: #BBC1E1;
+  --paper-behind: #E1E6F9;
+  --pencil-cap: #fff;
+  --pencil-top: #275EFE;
+  --pencil-middle: #fff;
+  --pencil-bottom: #5C86FF;
+  --shadow: rgba(13, 15, 25, .2);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 17px 29px 17px 69px;
+  transition: background 0.3s;
+  color: var(--color);
+  background: var(--bg, var(--background));
+}
+
+.continue-application > div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 53px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  background: var(--background-left);
+}
+
+.continue-application > div .folder {
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+.continue-application > div .folder .top {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+  width: 24px;
+  height: 27px;
+  display: block;
+  fill: var(--folder);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease var(--fds, 0.45s);
+  transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before, .continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  content: "";
+  position: absolute;
+  left: var(--l, 0);
+  top: var(--t, 0);
+  width: var(--w, 100%);
+  height: var(--h, 100%);
+  border-radius: 1px;
+  background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before, .continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before, .continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: .15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: .15s;
+  --pex: -24px;
+}
 
   
-  
+/* Estilos del contenedor */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; /* Ocupa toda la altura de la pantalla */
+  /*background-color: #f0f0f0; /* Color de fondo claro */
+  margin-top: 20px;
+}
+.continue-application:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+
+
+/*CARDS LINEA DE TIEMPO*/
+
+
+
