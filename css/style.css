@@ -267,7 +267,7 @@ svg {
   margin-top: 20px;
 }
 .continue-application:hover {
-  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+  background-color: green; /* Azul más oscuro al pasar el mouse */
 }
 
 
