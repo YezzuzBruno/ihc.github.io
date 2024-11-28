@@ -6,7 +6,7 @@
     <title>Interacción Humano Computador</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <!--<link rel="stylesheet" href="css/style.css" />-->
     <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
     <link rel="icon" href="img/logo.png" type="image/x-icon" />
 
@@ -21,7 +21,11 @@
   </head>
   <body class="bg-gray-100 text-gray-800">
     <!-- Navbar -->
-    <nav x-data="{ isOpen: false }" class="bg-white shadow dark:bg-gray-800" style="background-color: rgb(85, 83, 88);">
+    <nav
+      x-data="{ isOpen: false }"
+      class="bg-white shadow dark:bg-gray-800"
+      style="background-color: rgb(85, 83, 88)"
+    >
       <div class="container px-6 py-4 mx-auto">
         <div class="lg:flex lg:items-center">
           <div class="flex items-center justify-between">
@@ -29,7 +33,7 @@
               <img class="w-auto h-12 sm:h-20" src="img/logo.png" alt="" />
             </a>
           </div>
-      
+
           <div
             x-cloak
             :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
@@ -59,10 +63,8 @@
                 >Nosotros</a
               >
             </div>
-      
+
             <div class="flex justify-center mt-6 lg:flex lg:mt-0 lg:-mx-2">
-              
-            
               <a
                 href="#"
                 class="mx-2 text-white transition-transform duration-300 transform hover:scale-110"
@@ -78,7 +80,7 @@
                   />
                 </svg>
               </a>
-            
+
               <a
                 href="#"
                 class="mx-2 text-white transition-transform duration-300 transform hover:scale-110"
@@ -95,605 +97,261 @@
                 </svg>
               </a>
             </div>
-            
           </div>
         </div>
       </div>
-      
     </nav>
 
-    <!-- Sección de Información -->
     <section
-      class="relative w-full h-screen py-10 px-6 bg-cover bg-center flex flex-col justify-center items-center"
-      style="background-image: url('img/ihc.jpeg')"
+      class="relative w-full h-screen py-10 px-6 bg-cover bg-center flex items-center"
+      style="background-color: rgb(175, 93, 93)"
     >
       <!-- Superposición de color -->
       <div class="absolute inset-0 bg-black opacity-80"></div>
-      <!-- Superposición con color negro y opacidad del 50% -->
 
-      <div class="text-center mb-8 text-white relative z-10">
-        <div class="text-center">
-          <h2 class="text-6xl font-bold">Interacción Humano Computador</h2>
-        </div>
-
-        <p class="mt-10 text-4xl">Videojuego</p>
-      </div>
-    </section>
-
-
-    <section id="info" class="w-full py-12 px-6 bg-cover bg-center" style="background-color: rgb(152, 150, 156);">
-      <div class="text-center mb-10">
-        <h2 class="text-4xl font-bold" style="color: white;">Información</h2>
-      </div>
-      <!-- Fondo oscuro para el texto -->
-      <div class="flex flex-col items-center gap-8"> <!-- Cambié esto para centrar las cards -->
-        <!-- Card 1 -->
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-[70%] max-w-full flex-row">
-          <div class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
+      <div class="relative z-10 flex w-full h-full">
+        <!-- Imagen con bordes difuminados -->
+        <div class="w-1/2 flex justify-center items-center relative">
+          <div class="relative w-full h-full overflow-hidden">
             <img
-              src="img/objetivo.jpg"
-              alt="card-image"
-              class="object-contain w-full h-full"
-            />
-          </div>
-          <div class="p-6">
-            <h6 class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase" style="color: rgb(138, 172, 67);">
-              Videojuego
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900" style="color: rgb(111, 141, 47);">
-              OBJETIVO
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700" style="font-size: 23px;">
-              El objetivo del videojuego es escapar de una habitación la cual contiene una variedad de puzzles los cuales guiarán al jugador.
-            </p>
-            <!--<a href="#" class="inline-block">
-              <button class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-4 h-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                </svg>
-              </button>
-            </a>-->
-          </div>
-        </div>
-    
-        <!-- Card 2 -->
-        <div class="relative flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-[70%] max-w-full flex-row">
-          <div class="p-6">
-            <h6 class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase" style="color: rgb(138, 172, 67);">
-              Videojuego
-            </h6>
-            <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900" style="color: rgb(111, 141, 47);">
-              TRAMA
-            </h4>
-            <p class="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700" style="font-size: 23px;">
-              El jugador fue secuestrado y despertado en una habitación desconocida. Al intentar escapar, se dará cuenta que la única salida está bloqueada con una contraseña, por lo que deberá de buscar dentro de la habitación una forma de conseguir esa contraseña. Al investigar por la habitación se dará cuenta de que hay distintas pistas que le permiten progresar, hasta que finalmente obtiene la contraseña y consigue huir. 
-            </p>
-            
-            <!--<a href="#" class="inline-block">
-              <button class="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-4 h-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                </svg>
-              </button>
-            </a>-->
-          </div>
-          <div class="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-l-none bg-clip-border rounded-xl shrink-0">
-            <img
-              src="img/trama.jpg"
-              alt="card-image"
-              class="object-cover w-full h-full"
+              src="img/nmre.jpeg"
+              alt="Nightmare"
+              class="w-full h-full object-cover rounded-xl"
+              style="
+                mask-image: radial-gradient(
+                  circle,
+                  rgba(0, 0, 0, 1) 50%,
+                  rgba(0, 0, 0, 0) 100%
+                );
+                -webkit-mask-image: radial-gradient(
+                  circle,
+                  rgba(0, 0, 0, 1) 10%,
+                  rgba(0, 0, 0, 0) 70%
+                );
+              "
             />
           </div>
         </div>
-      </div>
 
-      <div class="center-container">
-        <a href="https://drive.google.com/file/d/1gtJpZ80JrCSqHBCRCPRTnTBZkSASVd3f/view?usp=sharing">
-          <button class="continue-application">
-            <div>
-              <div class="pencil"></div>
-              <div class="folder">
-                <div class="top">
-                  <svg viewBox="0 0 24 27">
-                    <path
-                      d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="paper"></div>
-              </div>
-            </div>
-
-            <p style="font-size: 20px">Ver documento del proyecto</p>
-          </button>
-        </a>
+        <!-- Contenido del texto y botón -->
+        <div class="w-1/2 flex flex-col justify-center items-center text-white">
+          <h2 class="text-8xl font-bold text-center">Nightmare</h2>
+          <a
+            href="#comprar"
+            class="mt-10 bg-gradient-to-r from-red-500 to-black-400 text-white font-bold text-2xl py-4 px-8 rounded-lg shadow-lg hover:scale-110 transition-transform"
+          >
+            Comprar Ahora
+          </a>
+        </div>
       </div>
     </section>
-    
 
-    <!-- component -->
     <section
-    id="proceso"
-      class="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden" style="background-color: rgb(214, 217, 130);"
+      id="info"
+      class="w-full py-12 px-6 bg-cover bg-center"
+      style="background-color: rgb(66, 56, 56)"
     >
-      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
-        <div class="flex items-center justify-center min-h-1 bg-gray-10">
-          <h2 class="text-5xl text-gray-900 dark:text-white" style="color: rgb(44, 43, 46); font-weight: 500;">Proceso</h2>
+      <!-- Sección con imagen a la derecha y contenido a la izquierda -->
+      <div class="flex w-full gap-6 items-center h-full">
+        <!-- Contenido a la izquierda -->
+        <div class="w-1/2 p-6 h-full">
+          <h4
+            class="block mb-2 font-sans text-5xl font-semibold leading-snug tracking-normal text-blue-gray-900"
+            style="color: white"
+          >
+            Descripción del videojuego
+          </h4>
+          <p
+            class="block mb-8 font-sans text-base font-normal leading-relaxed text-white-0"
+            style="font-size: 23px; color: white"
+          >
+            El objetivo del videojuego es escapar de una habitación la cual
+            contiene una variedad de puzzles los cuales guiarán al jugador.
+          </p>
         </div>
-        <div
-          class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16"
-        >
-          <div class="w-full max-w-3xl mx-auto">
-            <!-- Vertical Timeline #2 -->
-            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-black before:to-transparent">
-              <!-- Item #1 -->
-              <div
-                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
-              >
-                <div
-                  class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
-                >
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="10"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
-                    />
-                  </svg>
-                </div>
-                <!-- Card -->
-                <div
-                  class="w-[calc(110%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-8 rounded border border-slate-200 shadow flex items-start space-x-4 transform origin-top-left group-hover:scale-110 transition-transform"
-                >
-                  <svg
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"
-                    />
-                  </svg>
 
-                  <div>
-                    <div
-                      class="flex items-center justify-between space-x-2 mb-1"
-                    >
-                      <div class="font-bold text-slate-900"></div>
-                      <time class="text-xs font-medium text-indigo-500"
-                        >07/09/2024</time
-                      >
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style="color: black;"
-                      >
-                        Creación de la idea
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-500 dark:text-gray-400"
-                    >
-                    Se propuso un videojuego de acertijos en el que el jugador debe escapar de una habitación resolviendo puzzles para obtener una contraseña. El jugador está secuestrado y debe encontrar pistas para escapar. 
-                    El objetivo era diseñar los acertijos y puzzles necesarios para que el jugador obtenga la contraseña y pueda escapar de la habitación.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Item #2 -->
-              <div
-                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
-              >
-                <div
-                  class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
-                >
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="10"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
-                    />
-                  </svg>
-                </div>
-                <!-- Card -->
-                <div
-                  class="w-[calc(110%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-8 rounded border border-slate-200 shadow flex items-start space-x-4 transform origin-top-right group-hover:scale-110 transition-transform"
-                >
-                  <svg
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"
-                    />
-                  </svg>
-
-                  <div>
-                    <div
-                      class="flex items-center justify-between space-x-2 mb-1"
-                    >
-                      <div class="font-bold text-slate-900"></div>
-                      <time class="text-xs font-medium text-indigo-500"
-                        >13/09/2024</time
-                      >
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style="color: black;"
-                      >
-                        Scketching
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-500 dark:text-gray-400"
-                    >
-                    Se realizaron los primeros bocetos del juego, incluyendo el ambiente y los acertijos.
-                    Se definieron diversas interfaces, como la visualización de las manos y los escenarios en primera persona.
-                    </p>
-                    <a
-                      href="https://drive.google.com/drive/folders/1Q2YVelxrUP9Up1D_7NgCqv6WPDFgucZO?usp=sharing"
-                      class="inline-flex font-medium items-center text-blue-600 hover:underline"
-                    >
-                      Ver fotos
-                      <svg
-                        class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 18 18"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              
-
-              <!-- Item #4 -->
-              <div
-                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
-              >
-                <div
-                  class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
-                >
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="10"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
-                    />
-                  </svg>
-                </div>
-                <!-- Card -->
-                <div
-                  class="w-[calc(110%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-8 rounded border border-slate-200 shadow flex items-start space-x-4 transform origin-top-left group-hover:scale-110 transition-transform"
-                >
-                  <svg
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"
-                    />
-                  </svg>
-
-                  <div>
-                    <div
-                      class="flex items-center justify-between space-x-2 mb-1"
-                    >
-                      <div class="font-bold text-slate-900"></div>
-                      <time class="text-xs font-medium text-indigo-500"
-                        >19/09/2024</time
-                      >
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style="color: black;"
-                      >
-                        Prototipo
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-500 dark:text-gray-400"
-                    >
-                    Se construyó un prototipo interactivo donde los usuarios podían realizar las mecánicas básicas del juego.
-                    Los usuarios brindaron opiniones y críticas sobre las mecánicas, proporcionando información valiosa sobre los aciertos y errores del diseño.
-                    </p>
-                    <a
-                      href="https://drive.google.com/drive/folders/1qo7D1JfdykWVA7EBIXN0M6CnY7k-uFXK?usp=sharing"
-                      class="inline-flex font-medium items-center text-blue-600 hover:underline"
-                    >
-                      Ver videos
-                      <svg
-                        class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 18 18"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Item #5 -->
-              <div
-                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
-              >
-                <div
-                  class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
-                >
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="10"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
-                    />
-                  </svg>
-                </div>
-                <!-- Card -->
-                <div
-                  class="w-[calc(110%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-8 rounded border border-slate-200 shadow flex items-start space-x-4 transform origin-top-right group-hover:scale-110 transition-transform"
-                >
-                  <svg
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"
-                    />
-                  </svg>
-
-                  <div>
-                    <div
-                      class="flex items-center justify-between space-x-2 mb-1"
-                    >
-                      <div class="font-bold text-slate-900"></div>
-                      <time class="text-xs font-medium text-indigo-500"
-                        >26/09/2024</time
-                      >
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style="color: black;"
-                      >
-                        Evaluación con Usuarios - Primera fase
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-500 dark:text-gray-400"
-                    >
-                    El primer prototipo en VR ofreció a los jugadores una experiencia inmersiva para colaborar y enfrentar desafíos. Se incorporaron actividades que requerían trabajo en equipo para progresar.
-                    Los jugadores tuvieron dificultades para encontrar la combinación de números y no notaron el símbolo clave en el suelo, por lo que se iluminó para hacerlo más visible. También se redujo la intensidad de la luz del candil. A pesar de estos problemas, los usuarios dijeron que jugarían nuevamente.
-                    </p>
-                    <a
-                      href="https://drive.google.com/drive/folders/1bzmUiZXD2LfEbip346V8-H7KiRIMJ4-o?usp=sharing"
-                      class="block font-medium text-blue-600 hover:underline"
-                    >
-                      <span class="inline-flex items-center hover:underline">
-                        Ver videos
-                        <svg
-                          class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 18 18"
-                        >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                          />
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- Item #6 -->
-              <div
-                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
-              >
-                <div
-                  class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
-                >
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="10"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
-                    />
-                  </svg>
-                </div>
-                <!-- Card -->
-                <div
-                  class="w-[calc(110%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-8 rounded border border-slate-200 shadow flex items-start space-x-4 transform origin-top-left group-hover:scale-110 transition-transform"
-                >
-                  <svg
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"
-                    />
-                  </svg>
-
-                  <div>
-                    <div
-                      class="flex items-center justify-between space-x-2 mb-1"
-                    >
-                      <div class="font-bold text-slate-900"></div>
-                      <time class="text-xs font-medium text-indigo-500"
-                        >10/06/2023</time
-                      >
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style="color: black;"
-                      >
-                        Evaluación con usuarios - Segunda fase
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-500 dark:text-gray-400"
-                    >
-                    Se mejoró la visibilidad del símbolo en el suelo con iluminación destacada y se redujo la intensidad de la luz del candil, mejorando la experiencia del jugador.
-                    Los jugadores encontraron difícil hallar la combinación de números, pero se sintieron entretenidos y desafiados. Sugerieron agregar más puzzles y algunos considerarían comprar el juego si se alargara
-                    </p>
-                    <a
-                      href="https://drive.google.com/drive/folders/1ZlJ187bGEiU5eev-bE4OfQ8bL9FDKjVi?usp=sharing"
-                      class="inline-flex font-medium items-center text-blue-600 hover:underline"
-                    >
-                      Ver videos
-                      <svg
-                        class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 18 18"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- Item #7 -->
-              <div
-                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
-              >
-                <div
-                  class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
-                >
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12"
-                    height="10"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z"
-                    />
-                  </svg>
-                </div>
-                <!-- Card -->
-                <div
-                  class="w-[calc(110%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-8 rounded border border-slate-200 shadow flex items-start space-x-4 transform origin-top-right group-hover:scale-110 transition-transform"
-                >
-                  <svg
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 flex-shrink-0"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"
-                    />
-                  </svg>
-
-                  <div>
-                    <div
-                      class="flex items-center justify-between space-x-2 mb-1"
-                    >
-                      <div class="font-bold text-slate-900"></div>
-                      <time class="text-xs font-medium text-indigo-500"
-                        >10/10/2024</time
-                      >
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" style="color: black;"
-                      >
-                        Evaluación con Usuarios - Tercera fase
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 font-normal text-gray-500 dark:text-gray-400"
-                    >
-                    El juego respetó los principios de la Gestalt, aunque aparecieron aspectos que requerían mejoras.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-            <!-- End: Vertical Timeline #2 -->
-          </div>
+        <!-- Imagen a la derecha -->
+        <div class="w-1/2 relative overflow-hidden rounded-xl h-full">
+          <img
+            src="img/j1.jpeg"
+            alt="card-image"
+            class="object-cover w-full h-full rounded-xl"
+          />
         </div>
       </div>
     </section>
+
+
+    <section
+    class="relative w-full h-screen py-10 px-6 bg-cover bg-center flex items-center"
+    style="background-color: rgb(175, 93, 93)"
+  >
+    <!-- Superposición de color -->
+    <div class="absolute inset-0 bg-black opacity-80"></div>
+
+    <div class="relative z-10 flex w-full h-full">
+      <!-- Contenido del texto y botón -->
+      <div class="w-1/2 flex flex-col justify-center items-center text-white">
+        <h2 class="text-8xl font-bold text-center">Galería Multimedia</h2>
+        
+      </div>
+      <!-- Imagen con bordes difuminados -->
+      <div class="w-1/2 flex justify-center items-center relative">
+        
+        <div class="max-w-2xl mx-auto">
+          <div id="default-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div
+              class="overflow-hidden relative h-[500px] sm:h-[600px] xl:h-[800px] 2xl:h-[1000px] rounded-lg"
+            >
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <span
+                  class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
+                  >First Slide</span
+                >
+                <img
+                  src="img/j3.jpeg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="img/j2.jpeg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="img/j3.jpeg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider indicators -->
+            <div
+              class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+            >
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span class="hidden">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                <span class="hidden">Next</span>
+              </span>
+            </button>
+          </div>
+          <p class="mt-5" style="color: white;">
+            This carousel slider component is part of a larger, open-source
+            library of Tailwind CSS components. Learn more by going to the
+            official
+            <a
+              class="text-blue-600 hover:underline"
+              href="https://flowbite.com/docs/getting-started/introduction/"
+              target="_blank"
+              style="color: white;"
+              >Flowbite Documentation</a
+            >.
+          </p>
+          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+      </div>
+
+      
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Sección del Equipo -->
-    <section class="pt-20 pb-20" id="team" style="background-color: rgb(245, 249, 246);">
+    <section
+      class="pt-20 pb-20"
+      id="team"
+      style="background-color: rgb(245, 249, 246)"
+    >
       <div class="flex flex-wrap justify-center text-center mb-24">
         <div class="w-full lg:w-6/12 px-4">
           <h2 class="text-4xl font-semibold text-blueGray-700">
@@ -721,24 +379,7 @@
               <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                 Web Developer
               </p>
-              <div class="mt-6">
-                <button
-                  class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-twitter"></i></button
-                ><button
-                  class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-facebook-f"></i></button
-                ><button
-                  class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-dribbble"></i>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -757,19 +398,7 @@
               <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                 Marketing Specialist
               </p>
-              <div class="mt-6">
-                <button
-                  class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-google"></i></button
-                ><button
-                  class="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -786,24 +415,7 @@
               <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                 UI/UX Designer
               </p>
-              <div class="mt-6">
-                <button
-                  class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-google"></i></button
-                ><button
-                  class="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-twitter"></i></button
-                ><button
-                  class="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
-                >
-                  <i class="fab fa-instagram"></i>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -891,9 +503,15 @@
     </section>
 
     <!-- Pie de página -->
-    <footer id="contact" class="text-white py-6" style="background: rgb(85, 83, 88);">
-      <div class="container mx-auto text-center" style="font-size: 20px;">
-        <p style="color: rgb(138, 172, 67);">© 2024 Mi Sitio. Todos los derechos reservados.</p>
+    <footer
+      id="contact"
+      class="text-white py-6"
+      style="background: rgb(85, 83, 88)"
+    >
+      <div class="container mx-auto text-center" style="font-size: 20px">
+        <p style="color: rgb(138, 172, 67)">
+          © 2024 Mi Sitio. Todos los derechos reservados.
+        </p>
         <ul class="flex justify-center space-x-4 mt-4">
           <li><a href="#" class="hover:text-gray-200">Términos</a></li>
           <li><a href="#" class="hover:text-gray-200">Privacidad</a></li>
