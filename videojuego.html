@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/style_videojuego.css" />
   </head>
   <body class="bg-gray-100 text-gray-800">
     <!-- Navbar -->
@@ -141,7 +142,7 @@
         <!-- Contenido del texto y botón -->
         <div class="w-1/2 flex flex-col justify-center items-center text-white">
           <h2 class="text-8xl font-bold text-center">Nightmare</h2>
-          <p class="text-2xl  text-center">Finalizado</p>
+          <p class="text-2xl text-center">Finalizado</p>
           <a
             href="#comprar"
             class="mt-10 bg-gradient-to-r from-red-500 to-black-400 text-white font-bold text-2xl py-4 px-8 rounded-lg shadow-lg hover:scale-110 transition-transform"
@@ -174,6 +175,18 @@
             El objetivo del videojuego es escapar de una habitación la cual
             contiene una variedad de puzzles los cuales guiarán al jugador.
           </p>
+
+          <div
+            class="w-1/2 flex flex-col justify-center items-center text-white"
+          >
+            <button
+              onclick="document.getElementById('myModal').showModal()"
+              id="btn"
+              class="mt-10 bg-gradient-to-r from-red-500 to-black-400 text-white font-bold text-2xl py-4 px-8 rounded-lg shadow-lg hover:scale-110 transition-transform"
+            >
+              Ver más
+            </button>
+          </div>
         </div>
 
         <!-- Imagen a la derecha -->
@@ -188,171 +201,516 @@
     </section>
 
 
-    <section
-    class="relative w-full h-screen py-10 px-6 bg-cover bg-center flex items-center"
-    style="background-color: rgb(175, 93, 93)"
-  >
-    <!-- Superposición de color -->
-    <div class="absolute inset-0 bg-black opacity-80"></div>
-
-    <div class="relative z-10 flex w-full h-full">
-      <!-- Contenido del texto y botón -->
-      <div class="w-1/2 flex flex-col justify-center items-center text-white">
-        <h2 class="text-8xl font-bold text-center">Galería Multimedia</h2>
-        
+<!-- MODALES-------------------------------------------------------------------------------------------------- -->
+    <!-- PROCESO DE DESARROLLO -->
+    <dialog
+      id="myModal"
+      class="h-auto w-11/12 md:w-95% p-5 bg-white rounded-md"
+      style="background-color: rgb(214, 184, 184)"
+    >
+      <!-- Header -->
+      <div class="flex w-full h-auto justify-center items-center">
+        <div
+          class="flex w-10/12 h-auto py-3 justify-center items-center text-2xl font-bold"
+        >
+          <h2 style="font-size: 30px">PROCESO DE DESARROLLO - VIDEOJUEGO</h2>
+        </div>
+        <div
+          onclick="document.getElementById('myModal').close();"
+          class="flex w-1/12 h-auto justify-center cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <!--Header End-->
       </div>
-      <!-- Imagen con bordes difuminados -->
-      <div class="w-1/2 flex justify-center items-center relative">
-        
-        <div class="max-w-2xl mx-auto">
-          <div id="default-carousel" class="relative" data-carousel="static">
-            <!-- Carousel wrapper -->
-            <div
-              class="overflow-hidden relative h-[500px] sm:h-[600px] xl:h-[800px] 2xl:h-[1000px] rounded-lg"
-            >
-              <!-- Item 1 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span
-                  class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
-                  >First Slide</span
-                >
-                <img
-                  src="img/j3.jpeg"
-                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                  alt="..."
-                />
-              </div>
-              <!-- Item 2 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="img/j2.jpeg"
-                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                  alt="..."
-                />
-              </div>
-              <!-- Item 3 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="img/j3.jpeg"
-                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <!-- Slider indicators -->
-            <div
-              class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
-            >
-              <button
-                type="button"
-                class="w-3 h-3 rounded-full"
-                aria-current="false"
-                aria-label="Slide 1"
-                data-carousel-slide-to="0"
-              ></button>
-              <button
-                type="button"
-                class="w-3 h-3 rounded-full"
-                aria-current="false"
-                aria-label="Slide 2"
-                data-carousel-slide-to="1"
-              ></button>
-              <button
-                type="button"
-                class="w-3 h-3 rounded-full"
-                aria-current="false"
-                aria-label="Slide 3"
-                data-carousel-slide-to="2"
-              ></button>
-            </div>
-            <!-- Slider controls -->
-            <button
-              type="button"
-              class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-              data-carousel-prev
-            >
-              <span
-                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+      <div class="flex flex-col justify-center items-center">
+        <!-- Information Modal -->
+        <div class="md:w-4/5 rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
+            <div>
+              <i class="fas fa-exclamation-circle text-black-500"></i>
+              <span class="font-bold text-gray-700 text-lg"
+                >Creación de la idea</span
               >
-                <svg
-                  class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 19l-7-7 7-7"
-                  ></path>
-                </svg>
-                <span class="hidden">Previous</span>
-              </span>
-            </button>
+            </div>
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            Se propuso un videojuego de acertijos en el que el jugador debe
+            escapar de una habitación resolviendo puzzles para obtener una
+            contraseña. El jugador está secuestrado y debe encontrar pistas para
+            escapar. El objetivo era diseñar los acertijos y puzzles necesarios
+            para que el jugador obtenga la contraseña y pueda escapar de la
+            habitación.
+          </div>
+
+          <div class="px-5 py-4 flex justify-center">
             <button
-              type="button"
-              class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-              data-carousel-next
+              onclick="document.getElementById('documento_videojuego').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
             >
-              <span
-                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-              >
-                <svg
-                  class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-                <span class="hidden">Next</span>
-              </span>
+              Ver documento del proyecto
             </button>
           </div>
-          <p class="mt-5" style="color: white;">
-            This carousel slider component is part of a larger, open-source
-            library of Tailwind CSS components. Learn more by going to the
-            official
-            <a
-              class="text-blue-600 hover:underline"
-              href="https://flowbite.com/docs/getting-started/introduction/"
-              target="_blank"
-              style="color: white;"
-              >Flowbite Documentation</a
-            >.
-          </p>
-          <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
         </div>
 
+        <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
+            <div>
+              <i class="fa fa-pencil-alt text-black-500"></i>
+
+              <span class="font-bold text-gray-700 text-lg">Scketching</span>
+            </div>
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            Se realizaron los primeros bocetos del juego, incluyendo el ambiente y los acertijos. Se definieron diversas interfaces, como la visualización de las manos y los escenarios en primera persona.
+          </div>
+
+          <div class="px-5 py-4 flex justify-center">
+            <button
+              onclick="document.getElementById('fotosScketching').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Ver fotos
+            </button>
+          </div>
+        </div>
+
+        <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
+            <div>
+              <i class="fa fa-cogs"></i>
+
+              <span class="font-bold text-gray-700 text-lg">Prototipo</span>
+            </div>
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            Se construyó un prototipo interactivo donde los usuarios podían realizar las mecánicas básicas del juego. Los usuarios brindaron opiniones y críticas sobre las mecánicas, proporcionando información valiosa sobre los aciertos y errores del diseño.
+          </div>
+
+          <div class="px-5 py-4 flex justify-center">
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 2
+            </button>
+          </div>
+        </div>
+
+        <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
+            <div>
+              
+              <i class="fa fa-search"></i>
+              <span class="font-bold text-gray-700 text-lg">Evaluación con Usuarios - Primera Fase</span>
+            </div>
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            El primer prototipo en VR ofreció a los jugadores una experiencia inmersiva para colaborar y enfrentar desafíos. Se incorporaron actividades que requerían trabajo en equipo para progresar. Los jugadores tuvieron dificultades para encontrar la combinación de números y no notaron el símbolo clave en el suelo, por lo que se iluminó para hacerlo más visible. También se redujo la intensidad de la luz del candil. A pesar de estos problemas, los usuarios dijeron que jugarían nuevamente.
+          </div>
+
+          <div class="px-5 py-4 flex justify-center">
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1 - feedback
+            </button>
+          </div>
+          </div>
+          <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
+            <div>
+              <i class="fa fa-check-circle"></i>
+
+              <span class="font-bold text-gray-700 text-lg">Evaluación con Usuarios - Segunda Fase</span>
+            </div>
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            Se mejoró la visibilidad del símbolo en el suelo con iluminación destacada y se redujo la intensidad de la luz del candil, mejorando la experiencia del jugador. Los jugadores encontraron difícil hallar la combinación de números, pero se sintieron entretenidos y desafiados. Sugerieron agregar más puzzles y algunos considerarían comprar el juego si se alargara
+          </div>
+
+          <div class="px-6 py-6 flex justify-center">
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1 - feedback
+            </button>
+
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 2
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 2 - feedback
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 3
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 3 - feedback
+            </button>
+          </div>
+        </div>
+        </div>
+
+        
+      </div>
+    </dialog>
+
+
+    <!-- MODAL FOTOS SCKETCHING -->
+    <dialog
+      id="fotosScketching"
+      class="h-auto w-11/12 md:w-95% p-5 bg-white rounded-md"
+      style="background-color: rgb(214, 184, 184)"
+    >
+      <!-- Header -->
+      <div class="flex w-full h-auto justify-center items-center">
+        <div
+          class="flex w-10/12 h-auto py-3 justify-center items-center text-2xl font-bold"
+        >
+          <h2 style="font-size: 30px">SCKETCHING - VIDEOJUEGO</h2>
+        </div>
+        <div
+          onclick="document.getElementById('fotosScketching').close();"
+          class="flex w-1/12 h-auto justify-center cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <!--Header End-->
       </div>
 
+      <!-- component -->
+      <!-- This is an example component -->
+      <div class="max-w-90% mx-auto" style="padding-top: 50px;">
+        <div id="default-carousel" class="relative" data-carousel="static" style="width: 80%; margin: auto; height: 70vh;">
+          <!-- Carousel wrapper------------------- AUMENTO DEL ALTO DE LAS FOTOS-->
+          <div
+            class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+            style="height: 70vh;"
+          >
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <span
+                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
+                >First Slide</span
+              >
+              <img
+                src="img/scketching1.jpeg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="img/scketching2.jpeg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="img/scketching3.jpeg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="hidden">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="hidden">Next</span>
+            </span>
+          </button>
+        </div>
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      </div>
+    </dialog>
+
+
+    <!-- MODAL DOCUMENTO VIDEOJUEGO -->
+    <dialog
+      id="documento_videojuego"
+      class="h-auto w-11/12 md:w-95% p-5 bg-white rounded-md"
+      style="background-color: rgb(214, 184, 184)"
+    >
+      <!-- Header -->
+      <div class="flex w-full h-auto justify-center items-center">
+        <div
+          class="flex w-10/12 h-auto py-3 justify-center items-center text-2xl font-bold"
+        >
+          <h2 style="font-size: 40px">DOCUMENTO - VIDEOJUEGO</h2>
+        </div>
+        <div
+          onclick="document.getElementById('documento_videojuego').close();"
+          class="flex w-1/12 h-auto justify-center cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <!--Header End-->
+      </div>
+      <div
+      style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh; /* Ajusta la altura según sea necesario */
+      /*background-color: #f0f0f0;  Solo para resaltar el div */
+      padding-top: 0px;
+    "
+>
+  <iframe
+    src="docs/DOCUMENTO VIDEOJUEGO.pdf"
+    style="
+      width: 90%;
+      height: 700px;
+      border: none;
+    "
+  ></iframe>
+</div>
+
       
+    </dialog>
+
+    
+    <!-- MODAL VIDEO PROTOTIPO -->
+    <dialog
+      id="video_prototipo"
+      class="h-auto w-11/12 md:w-95% p-5 bg-white rounded-md"
+      style="background-color: rgb(214, 184, 184)"
+    >
+      <!-- Header -->
+      <div class="flex w-full h-auto justify-center items-center">
+        <div
+          class="flex w-10/12 h-auto py-3 justify-center items-center text-2xl font-bold"
+        >
+          
+        </div>
+        <div
+          onclick="document.getElementById('video_prototipo').close();"
+          class="flex w-1/12 h-auto justify-center cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <!--Header End-->
+      </div>
+      <div style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh; /* Ajusta la altura según sea necesario */
+      /*background-color: #f0f0f0;  Solo para resaltar el div */
+      padding-top: 0px;
+    ">
+        <iframe width="90%" height="700" src="https://www.youtube.com/embed/4XvfpCz_vh8" title="Crea tu primer juego 2D en Unity desde cero" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-  </section>
+    
+      
+    </dialog>
 
 
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Sección del Equipo -->
+    <!-- Sección del Equipo --------------------------------------------------->
     <section
       class="pt-20 pb-20"
       id="team"
@@ -385,7 +743,6 @@
               <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                 Web Developer
               </p>
-              
             </div>
           </div>
         </div>
@@ -404,7 +761,6 @@
               <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                 Marketing Specialist
               </p>
-              
             </div>
           </div>
         </div>
@@ -421,7 +777,6 @@
               <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                 UI/UX Designer
               </p>
-              
             </div>
           </div>
         </div>
@@ -438,7 +793,6 @@
               <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                 Founder and CEO
               </p>
-              
             </div>
           </div>
         </div>
