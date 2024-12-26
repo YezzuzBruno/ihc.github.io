@@ -141,7 +141,8 @@
 
         <!-- Contenido del texto y botón -->
         <div class="w-1/2 flex flex-col justify-center items-center text-white">
-          <h2 class="text-4xl font-bold text-center">Nightmare: ¿Podrás sobrevivir a la pesadilla? ¡Descubre los secretos que acechan en las sombras!</h2>
+          <h2 class="text-8xl font-bold text-center">Nightmare</h2>
+          <p class="text-2xl text-center">Finalizado</p>
           <a
             href="#comprar"
             class="mt-10 bg-gradient-to-r from-red-500 to-black-400 text-white font-bold text-2xl py-4 px-8 rounded-lg shadow-lg hover:scale-110 transition-transform"
@@ -237,164 +238,208 @@
         <!--Header End-->
       </div>
       <div class="flex flex-col justify-center items-center">
-
-        <ol style="--length: 5" role="list">
-
-          <li style="--i: 1">
+        <!-- Information Modal -->
+        <div class="md:w-4/5 rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
             <div>
-              <h3 class="font-bold text-gray-700 text-lg"
-                >Creación de la idea</h3>
+              <i class="fas fa-exclamation-circle text-black-500"></i>
+              <span class="font-bold text-gray-700 text-lg"
+                >Creación de la idea</span
+              >
             </div>
-            <p>Se propuso un videojuego de acertijos en el que el jugador debe
-              escapar de una habitación resolviendo puzzles para obtener una
-              contraseña. El jugador está secuestrado y debe encontrar pistas para
-              escapar. El objetivo era diseñar los acertijos y puzzles necesarios
-              para que el jugador obtenga la contraseña y pueda escapar de la
-              habitación.</p>
-            <div class="px-5 py-4 flex justify-center">
-                <button
-                  onclick="document.getElementById('documento_videojuego').showModal()"
-                  id="btn"
-                  class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                  style="background-color: rgb(252, 95, 95)"
-                >
-                  Ver documento del proyecto
-                </button>
-              </div>
-          </li>
-      
-          <li style="--i: 2">
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            Se propuso un videojuego de acertijos en el que el jugador debe
+            escapar de una habitación resolviendo puzzles para obtener una
+            contraseña. El jugador está secuestrado y debe encontrar pistas para
+            escapar. El objetivo era diseñar los acertijos y puzzles necesarios
+            para que el jugador obtenga la contraseña y pueda escapar de la
+            habitación.
+          </div>
+
+          <div class="px-5 py-4 flex justify-center">
+            <button
+              onclick="document.getElementById('documento_videojuego').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Ver documento del proyecto
+            </button>
+          </div>
+        </div>
+
+        <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
             <div>
-              <h3 class="font-bold text-gray-700 text-lg">Scketching</h3>
-            </div>
-            <p>Se realizaron los primeros bocetos del juego, incluyendo el ambiente y los acertijos. Se definieron diversas interfaces, como la visualización de las manos y los escenarios en primera persona.</p>
-            <div class="px-5 py-4 flex justify-center">
-              <button
-                onclick="document.getElementById('fotosScketching').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Ver fotos
-              </button>
-            </div>
-          </li>
+              <i class="fa fa-pencil-alt text-black-500"></i>
 
-          <li style="--i: 3">
+              <span class="font-bold text-gray-700 text-lg">Scketching</span>
+            </div>
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            Se realizaron los primeros bocetos del juego, incluyendo el ambiente y los acertijos. Se definieron diversas interfaces, como la visualización de las manos y los escenarios en primera persona.
+          </div>
+
+          <div class="px-5 py-4 flex justify-center">
+            <button
+              onclick="document.getElementById('fotosScketching').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Ver fotos
+            </button>
+          </div>
+        </div>
+
+        <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
             <div>
-              <h3 class="font-bold text-gray-700 text-lg">Prototipo</h3>
+              <i class="fa fa-cogs"></i>
+
+              <span class="font-bold text-gray-700 text-lg">Prototipo</span>
             </div>
-            <p> Se construyó un prototipo interactivo donde los usuarios podían realizar las mecánicas básicas del juego. Los usuarios brindaron opiniones y críticas sobre las mecánicas, proporcionando información valiosa sobre los aciertos y errores del diseño.</p>                   
-            <div class="px-5 py-4 flex justify-center">
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 1
-              </button>
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 2
-              </button>
-            </div>
-          </li>
+            
+          </div>
 
-          <li style="--i: 4">
-            <div> 
-              <h3 class="font-bold text-gray-700 text-lg">Evaluación con Usuarios - Primera Fase</h3>
-            </div> 
+          <div class="px-10 py-5 text-gray-600">
+            Se construyó un prototipo interactivo donde los usuarios podían realizar las mecánicas básicas del juego. Los usuarios brindaron opiniones y críticas sobre las mecánicas, proporcionando información valiosa sobre los aciertos y errores del diseño.
+          </div>
 
-            <p>El primer prototipo en VR ofreció a los jugadores una experiencia inmersiva para colaborar y enfrentar desafíos. Se incorporaron actividades que requerían trabajo en equipo para progresar. Los jugadores tuvieron dificultades para encontrar la combinación de números y no notaron el símbolo clave en el suelo, por lo que se iluminó para hacerlo más visible. También se redujo la intensidad de la luz del candil. A pesar de estos problemas, los usuarios dijeron que jugarían nuevamente.</p>
+          <div class="px-5 py-4 flex justify-center">
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 2
+            </button>
+          </div>
+        </div>
 
-            <div class="px-5 py-4 flex justify-center">
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 1
-              </button>
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 1 - feedback
-              </button>
-            </div>
-          </li>
-
-          <li style="--i: 5">
+        <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
             <div>
-              <h3 class="font-bold text-gray-700 text-lg">Evaluación con Usuarios - Segunda Fase</h3>
+              
+              <i class="fa fa-search"></i>
+              <span class="font-bold text-gray-700 text-lg">Evaluación con Usuarios - Primera Fase</span>
             </div>
-            <p>Se mejoró la visibilidad del símbolo en el suelo con iluminación destacada y se redujo la intensidad de la luz del candil, mejorando la experiencia del jugador. Los jugadores encontraron difícil hallar la combinación de números, pero se sintieron entretenidos y desafiados. Sugerieron agregar más puzzles y algunos considerarían comprar el juego si se alargara.</p>
-          
-            <div class="px-6 py-6 flex justify-center">
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 1
-              </button>
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 1 - feedback
-              </button>
-  
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 2
-              </button>
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 2 - feedback
-              </button>
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 3
-              </button>
-              <button
-              onclick="document.getElementById('video_prototipo').showModal()"
-                id="btn"
-                class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
-                style="background-color: rgb(252, 95, 95)"
-              >
-                Usuario 3 - feedback
-              </button>
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            El primer prototipo en VR ofreció a los jugadores una experiencia inmersiva para colaborar y enfrentar desafíos. Se incorporaron actividades que requerían trabajo en equipo para progresar. Los jugadores tuvieron dificultades para encontrar la combinación de números y no notaron el símbolo clave en el suelo, por lo que se iluminó para hacerlo más visible. También se redujo la intensidad de la luz del candil. A pesar de estos problemas, los usuarios dijeron que jugarían nuevamente.
+          </div>
+
+          <div class="px-5 py-4 flex justify-center">
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1 - feedback
+            </button>
+          </div>
+          </div>
+          <!-- Warning Modal -->
+        <div class="md:w-4/5 sm:w-full rounded-lg shadow-lg bg-white my-3">
+          <div class="flex justify-between border-b border-gray-100 px-5 py-4">
+            <div>
+              <i class="fa fa-check-circle"></i>
+
+              <span class="font-bold text-gray-700 text-lg">Evaluación con Usuarios - Segunda Fase</span>
             </div>
-          
-          </li>
-        </ol> 
-       
+            
+          </div>
+
+          <div class="px-10 py-5 text-gray-600">
+            Se mejoró la visibilidad del símbolo en el suelo con iluminación destacada y se redujo la intensidad de la luz del candil, mejorando la experiencia del jugador. Los jugadores encontraron difícil hallar la combinación de números, pero se sintieron entretenidos y desafiados. Sugerieron agregar más puzzles y algunos considerarían comprar el juego si se alargara
+          </div>
+
+          <div class="px-6 py-6 flex justify-center">
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 1 - feedback
+            </button>
+
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 2
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 2 - feedback
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 3
+            </button>
+            <button
+            onclick="document.getElementById('video_prototipo').showModal()"
+              id="btn"
+              class="bg-orange-500 mr-1 rounded text-sm py-2 px-3 text-white hover:bg-orange-600 transition duration-150"
+              style="background-color: rgb(252, 95, 95)"
+            >
+              Usuario 3 - feedback
+            </button>
+          </div>
+        </div>
+        </div>
+
+        
       </div>
     </dialog>
+
 
     <!-- MODAL FOTOS SCKETCHING -->
     <dialog
@@ -782,15 +827,11 @@
         <p style="color: rgb(138, 172, 67)">
           © 2024 Mi Sitio. Todos los derechos reservados.
         </p>
-
-
-
-        <div class="flex justify-center space-x-4 mt-4">
-          <p><a href="#" class="hover:text-gray-200">Términos</a></p>
-          <p><a href="#" class="hover:text-gray-200">Privacidad</a></p>
-          <p><a href="#" class="hover:text-gray-200">Contacto</a></p>
-        </div>
-
+        <ul class="flex justify-center space-x-4 mt-4">
+          <li><a href="#" class="hover:text-gray-200">Términos</a></li>
+          <li><a href="#" class="hover:text-gray-200">Privacidad</a></li>
+          <li><a href="#" class="hover:text-gray-200">Contacto</a></li>
+        </ul>
       </div>
     </footer>
   </body>
